@@ -1,0 +1,69 @@
+📂 Step-by-Step Guide to Setting Up Flask Project with Login & Register Functionality
+1. Create the Project Folder
+Open your terminal or command prompt and run:
+mkdir flask_app
+cd flask_app
+2. Set Up a Virtual Environment (Recommended)
+python -m venv venv
+
+python -m venv venv
+Activate the virtual environment:
+
+bash.........................
+. venv/Scripts/activate
+
+3. Install Required Packages
+pip install flask flask-bootstrap werkzeug
+
+4. Create Project Structure
+Create folders and files step-by-step:
+
+mkdir templates static
+cd static
+mkdir css
+cd ..
+touch app.py
+touch database.db
+mkdir templates static
+cd static
+mkdir css
+cd ..
+touch app.py
+touch database.db
+
+
+Folder Structure:
+.............................................
+flask_app/
+├── static/
+│   └── css/
+├── templates/
+├── app.py
+└── database.db
+5. Add HTML Templates
+Inside the templates folder:
+
+cd templates
+touch base.html login.html register.html dashboard.html
+cd ..
+
+cd templates
+touch base.html login.html register.html dashboard.html
+cd ..
+6. File Content Guide
+app.py → Main Python app
+database.db → SQLite database file
+templates/base.html → Common layout
+templates/login.html → Login form
+templates/register.html → Registration form
+templates/dashboard.html → Dashboard view
+
+7. Run the Application
+Start the server:
+python app.py
+Visit:
+🔗 http://127.0.0.1:5000
+
+
+pip install flask flask_sqlalchemy werkzeug
+python app.py

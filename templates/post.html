@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{{ post.title }}</h1>
+    <p>{{ post.content }}</p>
+    <p><small>Posted on: {{ post.created_at }}</small></p>
+    
+    {% if session.get('admin') %}
+    <a href="{{ url_for('edit', id=post.id) }}" class="btn btn-warning">Edit</a>
+    <form action="{{ url_for('delete', id=post.id) }}" method="post" style="display:inline;">
+        <button type="submit" class="btn btn-danger">Delete</button>
+    </form>
+    {% endif %}
+
+{% endblock %}
+ 
